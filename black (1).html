@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Royal Black Jack</title>
+  <link rel="stylesheet" href="blackjack.css">
+  <script src="blackjack.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <div class="table" aria-label="Fekete és arany blackjack-asztal">
+      <section class="hand dealer" aria-label="Osztó lapjai">
+        <h2>Osztó <span id="dealer-sum">?</span></h2>
+        <div id="dealer-cards" class="cards"></div>
+      </section>
+      <section class="hand player" aria-label="Saját lapok">
+        <h2>Te <span id="your-sum"></span></h2>
+        <div id="your-cards" class="cards"></div>
+      </section>
+    </div>
+    <div class="controls">
+      <button id="hit" type="button">Lap kérek</button>
+      <button id="stay" type="button">Megállok</button>
+      <button id="new-game" type="button" class="secondary">Új kör</button>
+    </div>
+    <p id="results" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>
